@@ -1,0 +1,21 @@
+.page-footer {
+  @include reset;
+  margin: auto;
+  width: 288px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1159px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

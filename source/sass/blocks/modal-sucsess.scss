@@ -1,0 +1,50 @@
+.modal-sucsess {
+  position: relative;
+  display: none;
+  width: 320px;
+  height: 444px;
+  background-color: $white;
+}
+
+.modal-sucsess__title {
+  @include reset;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 43px;
+  color: $text-modal;
+  margin-top: 179px;
+  text-align: center;
+}
+
+.modal-sucsess__close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  display: block;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    width: 22px;
+    height: 1px;
+    background-color: $toggle
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+    top: 0;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}

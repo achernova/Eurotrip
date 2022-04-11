@@ -1,0 +1,243 @@
+.page-header {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1920px;
+  }
+}
+
+.page-header__logo {
+  @include reset;
+  height: 50px;
+  display: block;
+  margin-left: 16px;
+  padding-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
+}
+
+.page-header__container {
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $dark;
+    background-image: url("../img/intro-bck-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 83px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-bck-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/intro-bck-desktop.jpg");
+    background-size: 1920px auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-end;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-bck-desktop@2x.jpg");
+    }
+  }
+}
+
+.page-header__title {
+  display: block;
+  @include reset;
+  margin: auto;
+  color: $white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  background-color: $dark;
+  background-image: url("../img/intro-bck.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 82px 30px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-bck@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    @include reset;
+    background-color: transparent;
+    font-size: 30px;
+    line-height: 45px;
+    background-image: none;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 80px;
+    width: 412px;
+    text-align: left;
+    margin: 0;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-end;
+  }
+
+}
+
+.page-header__intro {
+  display: block;
+  @include reset;
+  text-align: center;
+  font-size: 16px;
+  line-height: 27px;
+  width: 288px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 417px;
+    color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: 0;
+    text-align: left;
+    margin: 0;
+    width: 411px;
+  }
+}
+
+.page-header__link {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $orange;
+  width: 288px;
+  padding-right: 105px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url('../img/arrow-right.svg');
+    background-repeat: no-repeat;
+    top: 17px;
+    left: 234px;
+
+    @media (min-width: $tablet-width) {
+      left: 195px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    padding-right: 69px;
+  }
+
+   @media (min-width: $desktop-width) {
+     margin: 0;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     padding-left: 40px;
+     width: 340px;
+   }
+}
+
+.page-header__paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  width: 288px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 417px;
+    margin: auto;
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 376px;
+    margin-bottom: 39px;
+  }
+}
+
+.page-header__top {
+  @media (min-width: $desktop-width) {
+    @include reset;
+    width: 1170px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+  }
+}
+
+.page-header__contact {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.page-header__phone {
+  @include reset;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $text-question;
+  text-decoration: underline;
+  margin-left: 15px;
+  position: relative;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone-head.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: -41px;
+  }
+}

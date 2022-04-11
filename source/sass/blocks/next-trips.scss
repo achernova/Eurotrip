@@ -1,0 +1,103 @@
+.next-trips {
+  @include reset;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 288px;
+    background-color: $line;
+    background-repeat: no-repeat;
+    top: 209px;
+    left: 140px;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 394px;
+
+    &::after {
+      height: 177px;
+      top: 0;
+      left: 405px;
+      transform: rotate(0deg);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 189px;
+      left: 394px;
+    }
+  }
+}
+
+.next-trips__title {
+  @include reset;
+  width: 288px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: $text-question;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.next-trips__wrapper {
+  width: 288px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 394px;
+  }
+}
+
+.next-trips__list {
+  @include reset;
+  width: 134px;
+  margin-bottom: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    width: 130px;
+  }
+}
+
+.next-trips__list--third {
+  flex-grow: 1;
+  width: 200px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    width: 130px;
+    flex-grow: 0;
+  }
+}
+
+.next-trips__item {
+  @include reset;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $text3;
+}

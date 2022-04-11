@@ -1,0 +1,49 @@
+.corporate {
+  @include reset;
+  margin: auto;
+  width: 288px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 726px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width)  {
+    width: 386px;
+
+  }
+}
+
+.corporate__title {
+  @include reset;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $text-question;
+  margin-bottom: 20px;
+}
+
+.corporate__paragraph {
+  @include reset;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text3;
+  text-align: center;
+  width: 288px;
+
+  @media (min-width: $tablet-width) {
+    width: 726px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 386px;
+    text-align: left;
+  }
+}

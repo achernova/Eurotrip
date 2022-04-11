@@ -1,0 +1,391 @@
+.countries-description {
+  @include reset;
+  margin: auto;
+  margin-bottom: 40px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 305px;
+    background-color: $line;
+    top: -178px;
+    left: 153px;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+  }
+}
+
+.countries-description__list {
+  @include reset;
+  margin: auto;
+  text-align: center;
+}
+
+.countries-description__item {
+  display: none;
+}
+
+.countries-description__item--active {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.countries-description__container {
+  @include reset;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+
+  @media (min-width: $tablet-width) {
+    width: 726px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 100px;
+  }
+}
+
+.countries-description__title {
+  @include reset;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 90px;
+    text-align: left;
+    position: relative;
+    margin-bottom: 53px;
+
+    &::before {
+      position: absolute;
+      content:"";
+      width: 4px;
+      height: 228px;
+      background-color: $orange;
+      transform: rotate(90deg);
+      top: -17px;
+      left: 112px;
+    }
+  }
+}
+
+.countries-description__paragraph {
+  @include reset;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $text;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 726px;
+    margin: auto;
+ }
+
+  @media (min-width: $desktop-width) {
+    width: 370px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+}
+
+.countries-description__button {
+  width: 288px;
+  margin: auto;
+  padding-top: 19px;
+  padding-bottom: 19px;
+
+  &:hover {
+    background-color: $orange-hover;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+}
+
+.countries-description__reviews {
+  margin: auto;
+  margin-top: 50px;
+  padding-top: 50px;
+  width: 320px;
+  background-size: 320px 415px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin-top: 31px;
+    padding-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 838px;
+    padding-bottom: 100px;
+    background: linear-gradient(90deg,#fff 19%,#09792e 19%,#09792e 80%,#fff 61%);
+    background-position: left;
+
+  }
+}
+
+.countries-description__reviews--greece {
+  background-image: url("../img/Greece.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Greece@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/Greece-tablet.jpg");
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Greece-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/Greece-tab-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Greece-tab-desktop@2x.jpg");
+    }
+  }
+}
+
+.countries-description__reviews--albania {
+  background-image: url("../img/Albania.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Albania@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-size: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/Albania-tab-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Albania-tab-desktop@2x.jpg");
+    }
+  }
+}
+
+
+.countries-description__reviews--macedonia {
+  background-image: url("../img/Macedonia.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Macedonia@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-size: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/Macedonia-tab-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Macedonia-tab-desktop@2x.jpg");
+    }
+  }
+}
+
+.countries-description__reviews--montenegro {
+
+  background-image: url("../img/Montenegro.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Montenegro@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-size: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/Montenegro-tab-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Montenegro-tab-desktop@2x.jpg");
+    }
+  }
+}
+
+.countries-description__reviews--croatia {
+  background-image: url("../img/Croatia.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Croatia@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-size: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/Croatia-tab-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Croatia-tab-desktop@2x.jpg");
+    }
+  }
+}
+
+.countries-description__reviews-container {
+  @include reset;
+  margin: auto;
+  width: 268px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 382px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 318px;
+    margin-top: 66px;
+  }
+}
+
+.countries-description__reviews-title {
+  @include reset;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 68px;
+    background-color: $orange;
+    top: 31px;
+    left: 39px;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    margin-left: 27px;
+
+    &::after {
+      top: 45px;
+    }
+  }
+}
+
+.countries-description__reviews-paragraph {
+  @include reset;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: $text;
+  text-align: center;
+  width: 228px;
+
+  @media (min-width: $tablet-width) {
+    width: 322px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 370px;
+  }
+}
+
+.countries-description__reviews-img {
+  @include reset;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-left: 30px;
+  }
+}
+
+.countries-description__reviews-photo {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+}
+
+.countries-description__reviews-autor {
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-top: 12px;
+    margin-left: 16px;
+  }
+}

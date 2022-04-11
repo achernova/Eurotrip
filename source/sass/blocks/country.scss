@@ -1,0 +1,124 @@
+.country {
+  @include reset;
+  margin: auto;
+  width: 288px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 88px;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+    margin: auto;
+  }
+}
+
+.country__list {
+  @include reset;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+.country__item {
+  position: relative;
+}
+
+.country__item:last-child {
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+}
+
+.country__show-more {
+  display: none;
+}
+
+.country__item:hover .country__show-more {
+  display: block;
+  position: absolute;
+  top: 160px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  border: 1px solid $white;
+  width: 266px;
+  padding: 30px 20px;
+}
+
+.country__link {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 288px;
+    height: 425px;
+    background-color: $hover;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+  }
+}
+
+.country__link:hover {
+  &::after {
+    display: block;
+  }
+}
+
+.country__titiles {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  position: absolute;
+  z-index: 1;
+  top: 368px;
+  left: 120px;
+  min-width: 92px;
+  background-color: $white;
+  width: 215px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  top: 340px;
+  left: 40px;
+}
+
+.country__img-file {
+  width: auto;
+}

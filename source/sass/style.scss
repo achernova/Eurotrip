@@ -1,0 +1,25 @@
+@import "fonts.scss";
+@import "global.scss";
+@import "mixins.scss";
+@import "variables.scss";
+
+//blocks//
+@import "blocks/visually-hidden.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/intro.scss";
+@import "blocks/country.scss";
+@import "blocks/description.scss";
+@import "blocks/countries-description.scss";
+@import "blocks/orange-button.scss";
+@import "blocks/price.scss";
+@import "blocks/feedback.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/next-trips.scss";
+@import "blocks/contacts.scss";
+@import "blocks/corporate.scss";
+@import "blocks/modal-trip.scss";
+@import "blocks/modal-window.scss";
+@import "blocks/modal-sucsess.scss";

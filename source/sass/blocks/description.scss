@@ -1,0 +1,48 @@
+.description {
+  @include reset;
+  margin: auto;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+  }
+}
+
+.description__tabs {
+  @include reset;
+  overflow: hidden;
+  margin-bottom: 39px;
+
+
+}
+
+.description__tabs-item {
+  margin-right: 99px;
+}
+
+.description__tabs-list {
+  @include reset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.description__tabs-link {
+  @include reset;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $tabs;
+}
+
+.description__tabs-link--active {
+  @include reset;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $orange;
+}

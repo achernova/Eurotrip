@@ -1,0 +1,52 @@
+.modal-trip {
+  @include reset;
+  margin: auto;
+  width: 320px;
+  height: 568px;
+  background-color: $white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-trip__title {
+  @include reset;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 43px;
+  color: $text-modal;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.modal-trip__form {
+  @include reset;
+  width: 288px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-trip__form-paragraph {
+  @include reset;
+}
+
+.modal-trip__form-label {
+  display: none;
+}
+
+.modal-trip__form-input {
+  @include reset;
+  display: block;
+  width: 288px;
+  height: 50px;
+  padding-left: 15px;
+  background-color: $white;
+  border: 1px solid $tabs;
+  margin-bottom: 20px;
+}
+
+.modal-trip__button {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}

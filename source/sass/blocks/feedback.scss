@@ -1,0 +1,140 @@
+.feedback{
+  @include reset;
+  margin: auto;
+  background-color: $menu;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 767px;
+    background-image: url("../img/feedback-bck.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 455px;
+    margin-bottom: 80px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback-bck@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+    padding-left: 510px;
+    background-position: left;
+    background: linear-gradient(90deg, rgba(255,10,10,1) 0%, rgba(255,170,170,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 100%);
+    background-image: url("../img/feedback-bck-desk.jpg");
+    background-size: 844px auto;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback-bck-desk@2x.jpg");
+    }
+  }
+}
+
+.feedback__wrapper {
+  @include reset;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    width: 658px;
+    height: 311px;;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 656px;
+  }
+}
+
+.feedback__title {
+  @include reset;
+  margin: auto;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  color: $text-question;
+  width: 288px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 345px;
+    margin-top: 50px;
+  }
+}
+
+.feedback__paragraph {
+  @include reset;
+  margin: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-question;
+  width: 288px;
+  margin-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 558px;
+  }
+}
+
+.feedback__form {
+  @include reset;
+  margin: auto;
+  width: 288px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 558px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.feedback__form-paragraph {
+  margin-bottom: 5px;
+}
+
+.feedback__form-label {
+  display: none;
+}
+
+.feedback__form-input {
+  @include reset;
+  width: 288px;
+  height: 50px;
+  padding-left: 21px;
+  background-color: $white;
+  border: 1px solid $tabs;
+
+  @media (min-width: $tablet-width) {
+    width: 269px;
+  }
+}
+
+.feedback__form-paragraph:first-child {
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
+}
+
+.feedback__button {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    flex-shrink: 1;
+    margin: auto;
+    width: 250px;
+  }
+}

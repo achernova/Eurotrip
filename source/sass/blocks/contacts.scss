@@ -1,0 +1,116 @@
+.contacts {
+  @include reset;
+  width: 288px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 288px;
+    background-color: $line;
+    background-repeat: no-repeat;
+    top: 14px;
+    left: 146px;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 330px;
+    align-items: flex-start;
+    padding-left: 90px;
+
+    &::after {
+      height: 726px;
+      top: -186px;
+      left: -45px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 1px;
+      height: 189px;
+      top: -31px;
+      left: 385px;
+      transform: rotate(0deg)
+    }
+  }
+}
+
+.contacts__title {
+  @include reset;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $text-question;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacts__list {
+  @include reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__item--email {
+  margin-left: 52px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 20px;
+    background-image: url("../img/email.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: -41px;
+  }
+}
+
+.contacts__item--phone {
+  margin-left: 44px;
+  margin-bottom: 30px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: -41px;
+  }
+}
+
+.contacts__email {
+  @include reset;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $orange;
+  position: relative;
+  cursor: pointer;
+}
+
+.contacts__phone {
+  @include reset;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $orange;
+  text-decoration: underline;
+  cursor: pointer;
+}
