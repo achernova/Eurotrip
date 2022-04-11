@@ -1,13 +1,26 @@
 .modal-trip {
+  display: none;
+}
+
+.modal-trip--show {
   @include reset;
   margin: auto;
   width: 320px;
   height: 568px;
   background-color: $white;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: $menu;
+    width: 720px;
+    height: 444px;
+    background-image: url("../img/modal-bck.jpg");
+    background-repeat: no-repeat;
+    align-items: flex-end;
+  }
 }
 
 .modal-trip__title {
@@ -18,6 +31,11 @@
   color: $text-modal;
   margin-top: 80px;
   margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 123px;
+    margin-top: 70px;
+  }
 }
 
 .modal-trip__form {
@@ -25,6 +43,10 @@
   width: 288px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+  }
 }
 
 .modal-trip__form-paragraph {
@@ -44,9 +66,48 @@
   background-color: $white;
   border: 1px solid $tabs;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 267px;
+  }
 }
 
 .modal-trip__button {
   padding-top: 19px;
   padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    margin-left: 47px;
+  }
+}
+
+.modal-trip__close {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  top: 40px;
+  right: 60px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    width: 37px;
+    height: 1px;
+    background-color: $text-modal;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+    top: 0;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
 }

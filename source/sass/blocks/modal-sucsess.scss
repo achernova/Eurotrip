@@ -1,9 +1,14 @@
 .modal-sucsess {
-  position: relative;
   display: none;
   width: 320px;
   height: 444px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    background-color: $menu;
+    width: 720px;
+    height: 444px;
+  }
 }
 
 .modal-sucsess__title {
@@ -18,13 +23,11 @@
 
 .modal-sucsess__close {
   position: absolute;
-  top: -50px;
-  right: 0;
-  display: block;
-  width: 22px;
-  height: 22px;
   cursor: pointer;
   border: none;
+  top: 40px;
+  right: 60px;
+  background-color: $menu;
 
   &::before,
   &::after {
@@ -32,9 +35,9 @@
     position: absolute;
     top: 10px;
     left: 25px;
-    width: 22px;
+    width: 37px;
     height: 1px;
-    background-color: $toggle
+    background-color: $text-modal;
   }
 
   &::before {

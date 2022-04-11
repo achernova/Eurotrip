@@ -24,12 +24,26 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 0;
     flex-grow: 1;
   }
 }
 
-.page-header__container {
+.page-header__logo-icon {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
 
+.page-header__logo-icon-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.page-header__container {
   @media (min-width: $tablet-width) {
     @include reset;
     width: 768px;
@@ -49,12 +63,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1920px;
     background-image: url("../img/intro-bck-desktop.jpg");
     background-size: 1920px auto;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: flex-end;
+    padding-right: 437px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-bck-desktop@2x.jpg");
@@ -101,8 +117,9 @@
     flex-direction: column;
     align-content: center;
     align-items: flex-end;
+    margin-bottom: 24px;
+    margin-top: 130px;
   }
-
 }
 
 .page-header__intro {
@@ -129,6 +146,7 @@
     text-align: left;
     margin: 0;
     width: 411px;
+    margin-bottom: 212px;
   }
 }
 
@@ -148,6 +166,10 @@
   padding-top: 19px;
   padding-bottom: 19px;
 
+  &:hover {
+    background-color: $orange-hover;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -160,6 +182,11 @@
 
     @media (min-width: $tablet-width) {
       left: 195px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 26px;
+      left: 287px;
     }
   }
 
@@ -221,8 +248,8 @@
 .page-header__phone {
   @include reset;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 18px;
+  line-height: 32px;
   color: $text-question;
   text-decoration: underline;
   margin-left: 15px;

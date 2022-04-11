@@ -10,4 +10,10 @@
   background-color: $orange;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }

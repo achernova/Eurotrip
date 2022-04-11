@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1170px;
+    margin-bottom: 238px;
   }
 }
 
@@ -16,8 +17,12 @@
   @include reset;
   overflow: hidden;
   margin-bottom: 39px;
+  padding-left: 17px;
 
-
+  @media (min-width: $desktop-width) {
+    margin-bottom: 83px;
+    padding-left: 0;
+  }
 }
 
 .description__tabs-item {
@@ -30,6 +35,14 @@
   flex-direction: row;
   justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 899px;
+    padding-left: 0;
+  }
 }
 .description__tabs-link {
   @include reset;

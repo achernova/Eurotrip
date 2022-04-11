@@ -26,6 +26,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    margin-right: 23px;
   }
 }
 
@@ -46,7 +47,12 @@
     background-repeat: no-repeat;
     top: 25px;
     right: 25px;
+  }
 
+  .main-nav__item:first-child {
+    @media (min-width: $desktop-width) {
+      margin-right: 30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -55,6 +61,7 @@
     background-color: $white;
     color: $text-question;
     height: 20px;
+    margin-left: 30px;
 
     &::after {
       background-image: none;
@@ -100,11 +107,19 @@
   content: "";
   position: absolute;
   top: 17px;
-  right: 24px;
+  right: 14px;
   width: 22px;
   height: 1px;
   background-color: $toggle;
   box-shadow: 0 8px 0 0 $toggle, 0 16px 0 0 $toggle;
+
+  @media (min-width: $tablet-width) {
+    right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 24px;
+  }
 }
 
 .main-nav--opened {
