@@ -171,6 +171,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
+  background-color: $white;
 
   @media (min-width: $desktop-width) {
     width: 370px;

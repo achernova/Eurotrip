@@ -6,6 +6,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1920px;
+    width: 1900px;
+    background-image: url("../img/desktop-back.png");
+    background-repeat: no-repeat;
+    background-size: 1444px auto;
+    background-position: top 1653px right 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop-back@2x.png");
+    }
   }
 }

@@ -15,9 +15,9 @@
 
 .description__tabs {
   @include reset;
-  overflow: hidden;
   margin-bottom: 39px;
   padding-left: 17px;
+  //overflow-x: auto;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 83px;

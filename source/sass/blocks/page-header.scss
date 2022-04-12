@@ -94,8 +94,9 @@
   padding: 82px 30px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/intro-bck@2x.jpg");
+      background-image: url("../img/intro-bck@2x.jpg");
   }
+
 
   @media (min-width: $tablet-width) {
     @include reset;
@@ -195,13 +196,13 @@
     padding-right: 69px;
   }
 
-   @media (min-width: $desktop-width) {
-     margin: 0;
-     padding-top: 30px;
-     padding-bottom: 30px;
-     padding-left: 40px;
-     width: 340px;
-   }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    width: 340px;
+  }
 }
 
 .page-header__paragraph {

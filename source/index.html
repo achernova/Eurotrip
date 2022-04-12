@@ -36,7 +36,7 @@
         </svg>
       </a>
 
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -139,26 +139,26 @@
       <div class="description__tabs" id="countries">
         <ul class="description__tabs-list">
           <li class="description__tabs-item">
-            <a href="" class="description__tabs-link description__tabs-link--active">Греция</a>
+            <a href="" class="description__tabs-link description__tabs-link--active" data-id="greece-tab">Греция</a>
           </li>
           <li class="description__tabs-item">
-            <a href="" class="description__tabs-link">Албания</a>
+            <a href="" class="description__tabs-link" data-id="albania-tab">Албания</a>
           </li>
           <li class="description__tabs-item">
-            <a href="" class="description__tabs-link">Македония</a>
+            <a href="" class="description__tabs-link" data-id="macedonia-tab">Македония</a>
           </li>
           <li class="description__tabs-item">
-            <a href="" class="description__tabs-link">Черногория</a>
+            <a href="" class="description__tabs-link" data-id="montenegro-tab">Черногория</a>
           </li>
           <li class="description__tabs-item">
-            <a href="" class="description__tabs-link">Хорватия</a>
+            <a href="" class="description__tabs-link" data-id="croatia-tab">Хорватия</a>
           </li>
         </ul>
       </div>
 
       <div class="countries-description">
         <ul class="countries-description__list">
-          <li class="countries-description__item countries-description__item--active" id="greece">
+          <li class="countries-description__item countries-description__item--active" id="greece-tab">
             <div class="countries-description__container">
               <h3 class="countries-description__title">Греция</h3>
               <p class="countries-description__paragraph">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
@@ -169,13 +169,17 @@
                 <h3 class="countries-description__reviews-title">Отзывы</h3>
                 <p class="countries-description__reviews-paragraph">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
                 <div class="countries-description__reviews-img">
-                  <img src="img/vlada.jpg" width="37" height="38" alt="фото Влада" class="countries-description__reviews-photo">
+                  <picture class="countries-description__reviews-photo">
+                    <source media="(min-width: 1920px)" srcset="img/vlada.jpg 1x, img/vlada@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/vlada.jpg 1x, img/vlada@2x.jpg 2x">
+                    <img class="countries-description__img-file" src="img/vlada.jpg" width="37" height="38" srcset="img/vlada@2x.jpg 2x" alt="фото Влада">
+                  </picture>
                   <span class="countries-description__reviews-autor">Влада Голицина</span>
                 </div>
               </div>
             </div>
           </li>
-          <li class="countries-description__item"  id="albania">
+          <li class="countries-description__item"  id="albania-tab">
             <div class="countries-description__container">
               <h3 class="countries-description__title">Албания</h3>
               <p class="countries-description__paragraph">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
@@ -186,13 +190,17 @@
                 <h3 class="countries-description__reviews-title">Отзывы</h3>
                 <p class="countries-description__reviews-paragraph">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
                 <div class="countries-description__reviews-img">
-                  <img src="img/marishka.jpg" width="37" height="38" alt="фото Маришка" class="countries-description__reviews-photo">
+                  <picture class="countries-description__reviews-photo">
+                    <source media="(min-width: 1920px)" srcset="img/marishka.jpg 1x, img/marishka@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/marishka.jpg 1x, img/marishka@2x.jpg 2x">
+                    <img class="countries-description__img-file" src="img/marishka.jpg" width="37" height="38" srcset="img/marishka@2x.jpg 2x" alt="фото Маришка">
+                  </picture>
                   <span class="countries-description__reviews-autor">Маришка</span>
                 </div>
               </div>
             </div>
           </li>
-          <li class="countries-description__item"  id="macedonia">
+          <li class="countries-description__item"  id="macedonia-tab">
             <div class="countries-description__container">
               <h3 class="countries-description__title">Македония</h3>
               <p class="countries-description__paragraph">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
@@ -203,13 +211,17 @@
                 <h3 class="countries-description__reviews-title">Отзывы</h3>
                 <p class="countries-description__reviews-paragraph">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
                 <div class="countries-description__reviews-img">
-                  <img src="img/Mickail.jpg" width="37" height="38" alt="фото Михаил" class="countries-description__reviews-photo">
+                  <picture class="countries-description__reviews-photo">
+                    <source media="(min-width: 1920px)" srcset="img/Mickail.jpg 1x, img/Mickail@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/Mickail.jpg 1x, img/Mickail@2x.jpg 2x">
+                    <img class="countries-description__img-file" src="img/Mickail.jpg" width="37" height="38" srcset="img/Mickail@2x.jpg 2x" alt="фото Михаил">
+                  </picture>
                   <span class="countries-description__reviews-autor">Михаил Кузьмин</span>
                 </div>
               </div>
             </div>
           </li>
-          <li class="countries-description__item" id="montenegro">
+          <li class="countries-description__item" id="montenegro-tab">
             <div class="countries-description__container">
               <h3 class="countries-description__title">Черногория</h3>
               <p class="countries-description__paragraph">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
@@ -220,13 +232,17 @@
                 <h3 class="countries-description__reviews-title">Отзывы</h3>
                 <p class="countries-description__reviews-paragraph">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
                 <div class="countries-description__reviews-img">
-                  <img src="img/Anastasia.jpg" width="37" height="38" alt="фото Анастасия" class="countries-description__reviews-photo">
+                  <picture class="countries-description__reviews-photo">
+                    <source media="(min-width: 1920px)" srcset="img/Anastasia.jpg 1x, img/Anastasia@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/Anastasia.jpg 1x, img/Anastasia@2x.jpg 2x">
+                    <img class="countries-description__img-file" src="img/Anastasia.jpg" width="37" height="38" srcset="img/Anastasia@2x.jpg 2x" alt="фото Анастасия">
+                  </picture>
                   <span class="countries-description__reviews-autor">Анастасия Мей</span>
                 </div>
               </div>
             </div>
           </li>
-          <li class="countries-description__item" id="croatia">
+          <li class="countries-description__item" id="croatia-tab">
             <div class="countries-description__container">
               <h3 class="countries-description__title">Хорватия</h3>
               <p class="countries-description__paragraph">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
@@ -237,7 +253,11 @@
                 <h3 class="countries-description__reviews-title">Отзывы</h3>
                 <p class="countries-description__reviews-paragraph">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
                 <div class="countries-description__reviews-img">
-                  <img src="img/Vladimir.jpg" width="37" height="38" alt="фото Владимир" class="countries-description__reviews-photo">
+                  <picture class="countries-description__reviews-photo">
+                    <source media="(min-width: 1920px)" srcset="img/Vladimir.jpg 1x, img/Vladimir@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/Vladimir.jpg 1x, img/Vladimir@2x.jpg 2x">
+                    <img class="countries-description__img-file" src="img/Vladimir.jpg" width="37" height="38" srcset="img/Vladimir@2x.jpg 2x" alt="фото Владимир">
+                  </picture>
                   <span class="countries-description__reviews-autor">Владимир Мулицин</span>
                 </div>
               </div>
@@ -358,7 +378,7 @@
 
   </footer>
 
-  <section class="modal-trip modal-window">
+  <section class="modal-trip modal-window" id="modal-show">
     <button class="modal-trip__close">
       <span class="visually-hidden">Закрыть</span>
     </button>

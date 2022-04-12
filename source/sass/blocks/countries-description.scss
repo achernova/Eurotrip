@@ -1,4 +1,4 @@
-.countries-description {
+.countries-description__item--active {
   @include reset;
   margin: auto;
   margin-bottom: 49px;
@@ -28,7 +28,6 @@
 
   @media (min-width: $desktop-width) {
     width: 1170px;
-
     &::after {
       height: 899px;
       top: -518px;
@@ -129,7 +128,7 @@
   @media (min-width: $tablet-width) {
     width: 726px;
     margin: auto;
- }
+  }
 
   @media (min-width: $desktop-width) {
     width: 380px;
